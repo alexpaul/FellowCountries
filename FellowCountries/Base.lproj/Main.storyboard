@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vne-RW-7SF">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fellow Countries-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CountryListController" customModule="FellowCountries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u0x-Sj-fnK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="countryCell" rowHeight="159" id="f6k-SC-fm6" customClass="CountryCell" customModule="FellowCountries" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="159"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f6k-SC-fm6" id="L92-Wf-n2J">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dg1-RI-QXE">
+                                                    <rect key="frame" x="28" y="29.666666666666671" width="100" height="100.00000000000001"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="6V4-Q9-UGc"/>
+                                                        <constraint firstAttribute="width" constant="100" id="S2b-Eh-hJF"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pni-c1-gYu">
+                                                    <rect key="frame" x="136" y="70.666666666666671" width="266" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRb-w9-iix">
+                                                    <rect key="frame" x="136" y="18.999999999999996" width="218" height="43.666666666666657"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-cu-Dda">
+                                                    <rect key="frame" x="362" y="25.666666666666671" width="40" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="2KX-Oy-rPG"/>
+                                                        <constraint firstAttribute="height" constant="30" id="zxk-Cu-0z9"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pni-c1-gYu" firstAttribute="trailing" secondItem="L92-Wf-n2J" secondAttribute="trailingMargin" constant="8" id="71u-zo-slU"/>
+                                                <constraint firstItem="jRb-w9-iix" firstAttribute="top" secondItem="L92-Wf-n2J" secondAttribute="topMargin" constant="8" id="8We-GW-bJa"/>
+                                                <constraint firstItem="pni-c1-gYu" firstAttribute="leading" secondItem="Dg1-RI-QXE" secondAttribute="trailing" constant="8" id="BgP-5q-WLc"/>
+                                                <constraint firstItem="Dg1-RI-QXE" firstAttribute="leading" secondItem="L92-Wf-n2J" secondAttribute="leadingMargin" constant="8" id="EAN-WF-kNY"/>
+                                                <constraint firstItem="pni-c1-gYu" firstAttribute="centerY" secondItem="L92-Wf-n2J" secondAttribute="centerY" id="ITF-3j-97c"/>
+                                                <constraint firstItem="pni-c1-gYu" firstAttribute="top" secondItem="jRb-w9-iix" secondAttribute="bottom" constant="8" id="ShB-gN-M1B"/>
+                                                <constraint firstItem="Os7-cu-Dda" firstAttribute="centerY" secondItem="jRb-w9-iix" secondAttribute="centerY" id="cPm-mv-WMz"/>
+                                                <constraint firstItem="Dg1-RI-QXE" firstAttribute="centerY" secondItem="pni-c1-gYu" secondAttribute="centerY" id="ihc-LG-O7C"/>
+                                                <constraint firstItem="jRb-w9-iix" firstAttribute="leading" secondItem="Dg1-RI-QXE" secondAttribute="trailing" constant="8" id="q3m-1v-sSs"/>
+                                                <constraint firstItem="Os7-cu-Dda" firstAttribute="leading" secondItem="jRb-w9-iix" secondAttribute="trailing" constant="8" id="qub-O8-qCD"/>
+                                                <constraint firstItem="Os7-cu-Dda" firstAttribute="trailing" secondItem="L92-Wf-n2J" secondAttribute="trailingMargin" constant="8" id="tdA-nq-R3h"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countryDescriptionLabel" destination="pni-c1-gYu" id="Kfk-oP-ZPG"/>
+                                            <outlet property="countryFlagImageView" destination="Os7-cu-Dda" id="6JT-Q5-vAN"/>
+                                            <outlet property="countryImageView" destination="Dg1-RI-QXE" id="hu3-Ou-D8m"/>
+                                            <outlet property="countryNameLabel" destination="jRb-w9-iix" id="qlw-VV-o7i"/>
+                                            <segue destination="u36-yg-yGm" kind="show" id="a0h-t0-98B"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u0x-Sj-fnK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BBH-kM-zrP"/>
+                            <constraint firstItem="u0x-Sj-fnK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KaK-U3-obF"/>
+                            <constraint firstAttribute="bottom" secondItem="u0x-Sj-fnK" secondAttribute="bottom" id="oqF-E0-KkW"/>
+                            <constraint firstItem="u0x-Sj-fnK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xbl-E4-phM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fellow Countries" id="FnR-iU-UEj"/>
+                    <connections>
+                        <outlet property="tableView" destination="u0x-Sj-fnK" id="YRR-OU-yRG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773.913043478261" y="132.58928571428572"/>
+        </scene>
+        <!--Country Detail Controller-->
+        <scene sceneID="Ded-hx-FJO">
+            <objects>
+                <viewController id="u36-yg-yGm" customClass="CountryDetailController" customModule="FellowCountries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Bf-eY-ykV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Msh-0c-i4R">
+                                <rect key="frame" x="0.0" y="87.999999999999972" width="414" height="358.33333333333326"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO9-mf-n6m">
+                                <rect key="frame" x="8" y="466.33333333333331" width="398" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Msh-0c-i4R" firstAttribute="top" secondItem="tNV-Hj-jMA" secondAttribute="top" id="7el-wc-Gh8"/>
+                            <constraint firstItem="aO9-mf-n6m" firstAttribute="leading" secondItem="tNV-Hj-jMA" secondAttribute="leading" constant="8" id="9aa-qc-Fh7"/>
+                            <constraint firstItem="tNV-Hj-jMA" firstAttribute="trailing" secondItem="aO9-mf-n6m" secondAttribute="trailing" constant="8" id="F6n-PB-UVg"/>
+                            <constraint firstItem="aO9-mf-n6m" firstAttribute="top" secondItem="Msh-0c-i4R" secondAttribute="bottom" constant="20" id="OVI-xM-8SK"/>
+                            <constraint firstItem="Msh-0c-i4R" firstAttribute="leading" secondItem="tNV-Hj-jMA" secondAttribute="leading" id="djg-in-bwY"/>
+                            <constraint firstItem="Msh-0c-i4R" firstAttribute="trailing" secondItem="tNV-Hj-jMA" secondAttribute="trailing" id="eoU-Fj-LMV"/>
+                            <constraint firstItem="Msh-0c-i4R" firstAttribute="height" secondItem="9Bf-eY-ykV" secondAttribute="height" multiplier="0.4" id="lST-TZ-2Ve"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tNV-Hj-jMA"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="4dm-FA-4xw"/>
+                    <connections>
+                        <outlet property="countryDescriptionLabel" destination="aO9-mf-n6m" id="j2U-Aw-A4O"/>
+                        <outlet property="countryImageView" destination="Msh-0c-i4R" id="7rz-93-Mhp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyP-lF-JRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3526" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9ka-ch-SSg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vne-RW-7SF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Lo9-9M-ke6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mfH-N7-9qZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDV-Wr-QfP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029" y="133"/>
+        </scene>
+    </scenes>
+</document>
